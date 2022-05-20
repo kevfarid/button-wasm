@@ -1,25 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
 body {
-	background-color: #232323;
+  color: #fff;
+  background-color: #232323;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Major Mono Display", monospace;
 }
 
-div {
-	color: white;
-	margin-top: 35px;
-	text-align: center;
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
 }
 
 button {
-	background-color: rgb(86, 4, 192);
-	border: none;
-	border-radius: 1rem;
-	border-width: 8px;
-	color:white;
-	font-size: 15em;
-	text-align: center;
-	height: 50%;
-	width: 50%;
+  color: #fff;
+  background-color: rgb(86, 4, 192);
+  border: none;
+  border-radius: 1rem;
+  font-size: 15em;
+  text-align: center;
+  width: 100%;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 p {
-	font-size: 15em;
+  font-size: 15em;
+  margin: 14rem 1rem 1rem 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.counter_wrapper {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 48rem) {
+  button {
+    font-size: 10em;
+  }
+  p {
+    font-size: 10em;
+  }
+}
+
+@media (max-width: 30rem) {
+  button {
+    font-size: 5em;
+  }
+  p {
+    font-size: 5em;
+  }
 }
